@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference"/>
+        <attr name="metaButtonBarButtonStyle" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="TypedBaseView">
+        <attr name="image" format="reference"/>
+        <attr name="name" format="string"/>
+        <attr name="value" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="Titlebar">
+        <attr name="titlebar_theme" format="enum">
+            <enum name="light" value="0"/>
+            <enum name="dark" value="1"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="CalendarDayView">
+        <attr name="dayHeight" format="dimension"/>
+        <attr name="debug" format="boolean"/>
+        <attr name="eventMarginLeft" format="dimension"/>
+        <attr name="lineColor" format="color"/>
+        <attr name="textHourSize" format="dimension"/>
+        <attr name="startHour" format="integer"/>
+        <attr name="endHour" format="integer"/>
+    </declare-styleable>
+</resources>

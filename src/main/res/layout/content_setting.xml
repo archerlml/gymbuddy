@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/content_new_report"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.github.chitoo.gymbuddy.activity.SettingActivity"
+    tools:showIn="@layout/activity_setting">
+
+    <RelativeLayout
+        style="@style/setting_section_layout">
+
+        <TextView
+            style="@style/setting_section_name"
+            android:text="Profile"/>
+
+        <View
+            style="@style/setting_option_line_close"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_name_layout"
+        style="@style/setting_option_layout"
+        tools:showIn="@layout/content_setting">
+
+        <TextView
+            style="@style/setting_option_key"
+            android:text="Screen Name"/>
+
+
+        <TextView
+            android:id="@+id/arrow1"
+            style="@style/setting_option_more"
+            android:text=">"/>
+
+        <TextView
+            android:id="@+id/user_name"
+            style="@style/setting_option_value_text"
+            android:layout_toLeftOf="@+id/arrow1"/>
+
+        <View
+            style="@style/setting_option_line_open"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/full_name_layout"
+        style="@style/setting_option_layout"
+        tools:showIn="@layout/content_setting">
+
+        <TextView
+            style="@style/setting_option_key"
+            android:text="Full Name"/>
+
+        <TextView
+            android:id="@+id/arrow2"
+            style="@style/setting_option_more"
+            android:text=">"/>
+
+        <TextView
+            android:id="@+id/full_name"
+            style="@style/setting_option_value_text"
+            android:layout_toLeftOf="@+id/arrow2"/>
+
+        <View
+            style="@style/setting_option_line_open"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/address_layout"
+        style="@style/setting_option_layout"
+        tools:showIn="@layout/content_setting">
+
+        <TextView
+            style="@style/setting_option_key"
+            android:text="Address"/>
+
+
+        <TextView
+            android:id="@+id/arrow3"
+            style="@style/setting_option_more"
+            android:text=">"/>
+
+        <TextView
+            android:id="@+id/address"
+            style="@style/setting_option_value_text"
+            android:layout_toLeftOf="@+id/arrow3"/>
+
+        <View
+            style="@style/setting_option_line_close"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        style="@style/setting_section_layout">
+
+        <TextView
+            style="@style/setting_section_name"
+            android:text="Preference"/>
+
+        <View
+            style="@style/setting_option_line_close"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/confirmation_layout"
+        style="@style/setting_option_layout"
+        tools:showIn="@layout/content_setting">
+
+        <TextView
+            style="@style/setting_option_key"
+            android:text="Report confirmation"/>
+
+        <CheckBox
+            android:id="@+id/confirmation"
+            style="@style/setting_option_value_text"
+            android:layout_alignParentRight="true"/>
+
+        <View
+            style="@style/setting_option_line_open"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/notification_layout"
+        style="@style/setting_option_layout"
+        tools:showIn="@layout/content_setting">
+
+        <TextView
+            style="@style/setting_option_key"
+            android:text="Status notify"/>
+
+        <CheckBox
+            android:id="@+id/notification"
+            style="@style/setting_option_value_text"
+            android:layout_alignParentRight="true"/>
+
+        <View
+            style="@style/setting_option_line_open"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/anonymously_layout"
+        style="@style/setting_option_layout"
+        tools:showIn="@layout/content_setting">
+
+        <TextView
+            style="@style/setting_option_key"
+            android:text="Report Anonymously"/>
+
+        <CheckBox
+            android:id="@+id/anonymously"
+            style="@style/setting_option_value_text"
+            android:layout_alignParentRight="true"/>
+
+        <View
+            style="@style/setting_option_line_close"/>
+    </RelativeLayout>
+
+</LinearLayout>

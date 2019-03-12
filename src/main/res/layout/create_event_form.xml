@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/contentGray"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_create_event">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginRight="20dp"
+                  android:orientation="horizontal">
+        <TextView
+            style="@style/rule_label"
+            android:drawableLeft="@drawable/ic_query_builder_black_48px"
+            android:text="From: "/>
+
+        <EditText android:id="@+id/start_time"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:clickable="true"
+                  android:focusable="false"
+                  android:inputType="date"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginRight="20dp"
+                  android:orientation="horizontal">
+        <TextView
+            style="@style/rule_label"
+            android:drawableLeft="@drawable/ic_query_builder_black_48px"
+            android:text="To: "/>
+
+        <EditText android:id="@+id/end_time"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:clickable="true"
+                  android:focusable="false"
+                  android:inputType="date"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginRight="20dp"
+                  android:orientation="horizontal">
+        <TextView
+            style="@style/rule_label"
+            android:drawableLeft="@drawable/ic_format_list_bulleted_black_48px"
+            android:text="Rule: "/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="LinearLayoutManager"
+            tools:listitem="@layout/item_rule"/>
+    </LinearLayout>
+
+    <TextView
+        style="@style/rule_label"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:drawableLeft="@drawable/ic_description_black_48px"
+        android:text="Description: "/>
+
+    <EditText android:id="@+id/description"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+              android:background="@color/contentWhite"
+              android:minHeight="50dp"
+              android:padding="10dp"
+              android:textSize="@dimen/h3"/>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:focusableInTouchMode="false"
+        android:layout_height="50dp"
+        android:background="@drawable/green_button_selector"
+        android:elevation="1dp"
+        android:gravity="center"
+        android:text="Preview"
+        android:textColor="@color/textWhite"
+        android:textSize="@dimen/h2"/>
+</LinearLayout>

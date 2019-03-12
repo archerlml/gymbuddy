@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/fragment_history_menu_bottom"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/black_overlay_light"
+              android:orientation="vertical"
+              android:padding="16dp"
+              app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <View
+        style="@style/setting_option_line_close"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/candidates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layoutManager="LinearLayoutManager"
+        tools:listitem="@layout/item_name_card"/>
+
+    <TextView android:id="@+id/match_time"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="10dp"
+              android:gravity="center"
+              android:textColor="@color/textBold"/>
+
+    <TextView android:id="@+id/match_location"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="10dp"
+              android:gravity="center"
+              android:textColor="@color/textBold"/>
+
+    <View style="@style/setting_option_line_close"
+          android:layout_marginBottom="5dp"
+          android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/delete_layout"
+        style="@style/bottom_sheet_menu_item">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete_forever_black_48px"
+            android:tint="@android:color/holo_red_dark"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/delete"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/save_layout"
+        style="@style/bottom_sheet_menu_item">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_check_circle_black_48px"
+            android:tint="@android:color/holo_green_dark"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Save"/>
+    </LinearLayout>
+
+
+</LinearLayout>

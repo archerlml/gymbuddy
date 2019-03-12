@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/contentGray"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_profile">
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="10dp"
+                  android:background="@color/contentWhite"
+                  android:elevation="1dp"
+                  android:orientation="vertical">
+        <!--<View-->
+        <!--style="@style/setting_option_line_close"/>-->
+        <LinearLayout
+            android:id="@+id/avatar_layout"
+            style="@style/setting_item_layout_large"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/setting_item_name"
+                android:text="Profile Photo"/>
+
+            <View android:layout_width="0dp"
+                  android:layout_height="1dp"
+                  android:layout_weight="1"
+            />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_account_circle_black_36dp"
+                app:civ_border_color="#FFffffff"
+                app:civ_border_width="2dp"/>
+
+            <ImageView
+                style="@style/setting_item_indicator"
+                android:src="@drawable/ic_keyboard_arrow_right_white_48px"/>
+        </LinearLayout>
+
+        <View style="@style/setting_option_line_open"/>
+        <LinearLayout
+            android:id="@+id/user_name_layout"
+            style="@style/setting_item_layout_normal"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/setting_item_name"
+                android:text="Name"/>
+
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/user_name"
+                style="@style/setting_item_value"
+                android:text=""/>
+            <ImageView
+                style="@style/setting_item_indicator"
+                android:src="@drawable/ic_keyboard_arrow_right_white_48px"/>
+        </LinearLayout>
+
+        <View style="@style/setting_option_line_open"/>
+
+        <LinearLayout
+            style="@style/setting_item_layout_normal"
+            android:id="@+id/description_layout"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/setting_item_name"
+                android:text="Description"/>
+
+            <View android:layout_width="0dp"
+                  android:layout_height="1dp"
+                  android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/description"
+                style="@style/setting_item_value"
+                android:ellipsize="end"
+                android:maxEms="15"/>
+
+            <ImageView
+                style="@style/setting_item_indicator"
+                android:src="@drawable/ic_keyboard_arrow_right_white_48px"/>
+        </LinearLayout>
+
+        <!--<View-->
+        <!--style="@style/setting_option_line_close"/>-->
+    </LinearLayout>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1"/>
+    <Button
+        android:id="@+id/button"
+        android:focusableInTouchMode="false"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/red_button_selector"
+        android:elevation="1dp"
+        android:gravity="center"
+        android:text="Sign Out"
+        android:textColor="@color/textWhite"
+        android:textSize="@dimen/h2"/>
+</LinearLayout>

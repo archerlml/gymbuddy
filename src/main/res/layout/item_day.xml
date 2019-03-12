@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/contentWhite"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <View android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:id="@+id/day"
+              android:text="Sun"
+              android:textColor="@color/textGray"
+              android:textSize="@dimen/body"
+    />
+    <View android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+    />
+    <TextView android:layout_width="30dp"
+              android:id="@+id/date"
+              android:layout_height="30dp"
+              android:gravity="center"
+              android:text="5"
+              android:textStyle="bold"
+              android:textSize="@dimen/body"
+    />
+    <View android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+    />
+    <View
+        android:backgroundTint="@color/contentGray"
+        android:id="@+id/indicator"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:visibility="invisible"
+        android:background="@drawable/ic_triangle_up"/>
+</LinearLayout>

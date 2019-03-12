@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/content_new_report"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/contentGray"
+    android:orientation="vertical"
+    tools:context="com.github.chitoo.gymbuddy.activity.MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/colorPrimary">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            style="@style/avatar"
+            android:src="@drawable/ic_account_circle_black_36dp"
+            app:civ_border_color="#FFffffff" app:civ_border_width="2dp"/>
+
+        <TextView android:id="@+id/user_name"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignTop="@id/profile_image"
+                  android:layout_toRightOf="@id/profile_image"
+                  android:textColor="@color/textWhite"
+                  android:textSize="@dimen/h1"/>
+
+        <TextView android:id="@+id/description"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignBottom="@id/profile_image"
+                  android:layout_toRightOf="@id/profile_image"
+                  android:text=""
+                  android:textColor="@color/textWhite"
+                  android:textSize="@dimen/body"/>
+
+        <ImageView android:layout_width="20dp"
+                   android:layout_height="20dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginRight="20dp"
+                   android:src="@drawable/ic_keyboard_arrow_right_white_48px"
+                   android:tint="@color/black_overlay"/>
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="10dp"
+                  android:background="@color/contentWhite"
+                  android:orientation="vertical">
+        <View
+            style="@style/setting_option_line_close"/>
+        <LinearLayout
+            style="@style/setting_item_layout_normal"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/setting_item_name"
+                android:text="My GymBuddy coins"/>
+
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/coins"
+                style="@style/setting_item_value"
+                android:text=""/>
+
+            <ImageView
+                style="@style/setting_item_indicator"
+                android:src="@drawable/ic_keyboard_arrow_right_white_48px"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+        <View style="@style/setting_option_line_open"/>
+        <LinearLayout
+            android:id="@+id/gym_layout"
+            style="@style/setting_item_layout_normal"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/setting_item_name"
+                android:text="My Gym"/>
+
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/my_gym"
+                style="@style/setting_item_value"
+                android:text=""/>
+
+            <ImageView
+                style="@style/setting_item_indicator"
+                android:src="@drawable/ic_keyboard_arrow_right_white_48px"/>
+        </LinearLayout>
+
+        <View style="@style/setting_option_line_open"/>
+
+        <LinearLayout
+            android:id="@+id/track_activities_layout"
+            style="@style/setting_item_layout_normal"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/setting_item_name"
+                android:text="Track my activities"/>
+
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/gender"
+                style="@style/setting_item_value"
+                android:text=""/>
+
+            <CheckBox android:id="@+id/track_activities_enabled"
+                      style="@style/setting_item_indicator"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:clickable="false"
+                      android:focusable="false"/>
+        </LinearLayout>
+        <View
+            style="@style/setting_option_line_close"/>
+    </LinearLayout>
+</LinearLayout>
+

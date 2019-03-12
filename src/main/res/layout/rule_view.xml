@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="5dp"
+                  android:orientation="horizontal">
+
+        <TextView
+            style="@style/rule_label"
+            android:text="Data Type: "
+        />
+        <Spinner android:id="@+id/type"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="5dp"
+
+                  android:orientation="horizontal">
+
+        <TextView
+            style="@style/rule_label"
+            android:text="Aggregatioin: "
+        />
+        <Spinner android:id="@+id/aggregation"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="5dp"
+                  android:orientation="horizontal">
+
+        <TextView
+            style="@style/rule_label"
+            android:text="Min Value: "
+        />
+        <EditText android:id="@+id/min_value"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="numberDecimal"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="5dp"
+                  android:orientation="horizontal">
+
+        <TextView
+            style="@style/rule_label"
+            android:text="Max Value: "
+        />
+        <EditText android:id="@+id/max_value"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="numberDecimal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/save_layout"
+        style="@style/bottom_sheet_menu_item">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_check_circle_black_48px"
+            android:tint="@android:color/holo_green_dark"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Save"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4e4555</color>
+    <color name="colorPrimaryDark">#bbbac1</color>
+
+    <!--content-->
+    <color name="contentWhite">#ffffff</color>
+    <color name="contentGray">#e9eef1</color>
+    <color name="colorAccent">#2E7D32</color>
+
+    <!--text-->
+    <color name="textGray">#4e4d50</color>
+    <color name="textLightGray">#bbbac1</color>
+    <color name="textWhite">#ffffff</color>
+    <color name="textBold">#000000</color>
+
+
+    <color name="blue">#0000ff</color>
+    <color name="green">#2E7D32</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="black_overlay_light">#10000000</color>
+    <color name="grayDark">#bbbac1</color>
+    <color name="grayLight">#eeedee</color>
+    <color name="golden">#ff9900</color>
+</resources>

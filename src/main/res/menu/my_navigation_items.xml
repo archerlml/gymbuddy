@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_gym"
+          android:icon="@drawable/ic_directions_run_black_48px"
+          android:title="@string/menu_gym"/>
+    <item android:id="@+id/action_discover"
+          android:icon="@drawable/ic_bubble_chart_black_48px"
+          android:title="@string/menu_discover"/>
+    <item android:id="@+id/action_me"
+          android:icon="@drawable/ic_perm_identity_black_48px"
+          android:title="@string/menu_me"/>
+</menu>

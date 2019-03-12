@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+    <TextView android:id="@+id/date"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="15dp"
+              android:text="Tuesday, October 31"
+              android:textColor="@color/textWhite"
+              android:textSize="@dimen/h1"
+              android:textStyle="bold"/>
+
+    <TextView android:id="@+id/exercise"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignLeft="@+id/date"
+              android:layout_below="@+id/date"
+              android:gravity="center"
+              android:text="9 min, 1 exercise"
+              android:textColor="@color/textWhite"
+              android:textSize="@dimen/h3"/>
+
+    <TextView android:id="@+id/completeness"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_above="@+id/progress_bar"
+              android:layout_alignLeft="@+id/date"
+              android:text="0% done"
+              android:textColor="@color/textWhite"
+              android:textSize="@dimen/mini"/>
+
+    <ProgressBar android:id="@+id/progress_bar"
+                 style="?android:attr/progressBarStyleHorizontal"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_alignLeft="@+id/date"
+                 android:layout_alignParentBottom="true"
+                 android:layout_alignRight="@+id/date"
+                 android:layout_marginBottom="15dp"
+                 android:progress="50"
+                 android:progressTint="@color/colorPrimary"/>
+</RelativeLayout>

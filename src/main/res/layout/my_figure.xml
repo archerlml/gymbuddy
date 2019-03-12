@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/contentWhite"
+              android:orientation="vertical"
+              tools:showIn="@layout/fragment_gym">
+
+    <TextView
+        style="@style/block_name"
+        android:text="My Figure"/>
+
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_height="160dp">
+
+        <ImageView android:id="@+id/figure_bg"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scaleType="centerCrop"
+                   android:src="@drawable/gym_4"/>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/figure_layout"
+              android:background="@color/black_overlay"
+        />
+
+        <include
+            android:id="@+id/add_figure_view"
+            layout="@layout/to_add_figure"/>
+
+        <com.github.chitoo.gymbuddy.views.MyFigureView
+            android:id="@+id/my_figure"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+        />
+
+    </FrameLayout>
+
+</LinearLayout>
+

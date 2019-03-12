@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/contentWhite"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_event">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/contentGray"
+                  android:orientation="vertical"
+                  android:padding="10dp">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="5dp"
+                      android:orientation="horizontal">
+            <TextView
+                style="@style/rule_label"
+                android:drawableLeft="@drawable/ic_query_builder_black_48px"
+                android:text="From: "/>
+
+            <TextView android:id="@+id/start_time"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="5dp"
+                      android:orientation="horizontal">
+            <TextView
+                style="@style/rule_label"
+                android:drawableLeft="@drawable/ic_query_builder_black_48px"
+                android:text="To: "/>
+
+            <TextView android:id="@+id/end_time"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView android:id="@+id/description"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:minHeight="50dp"
+              android:padding="20dp"
+              android:textColor="@color/textGray"
+              android:textSize="@dimen/h2"/>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/green_button_selector"
+        android:elevation="1dp"
+        android:gravity="center"
+        android:focusableInTouchMode="false"
+        android:text="Publish"
+        android:textColor="@color/textWhite"
+        android:textSize="@dimen/h2"/>
+</LinearLayout>
